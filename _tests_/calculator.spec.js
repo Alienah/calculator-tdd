@@ -11,7 +11,8 @@ describe("calculator app", () => {
     });
 
     it("substract two numbers", () => {
-        expect(app.substractTwoNumbers(1, 1)).toBe(1);
+        expect(app.substractTwoNumbers(1, 1)).toBe(0);
+        expect(app.substractTwoNumbers(1, 2)).toBe(-1);
     });
 });
 describe("check values", () => {

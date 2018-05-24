@@ -3,6 +3,10 @@ export default function calculator () {
         return num1 + num2;
     }
 
+    function substractTwoNumbers(num1, num2) {
+        return num1 - num2;
+    }
+
     function isANumber(value) {
         if (typeof value === "number") {
             return true;
@@ -13,6 +17,7 @@ export default function calculator () {
     }
     return {
         sumTwoNumbers,
+        substractTwoNumbers,
         isANumber
     };
 } 
