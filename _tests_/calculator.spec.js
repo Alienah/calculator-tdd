@@ -6,13 +6,16 @@ beforeEach(function () {
 describe("calculator app", () => {
     
     it("sum two numbers", () => {
-        expect(app.sumTwoNumbers(1,1)).toBe(2);
-        
+        expect(app.sumTwoNumbers(1,1)).toBe(2);        
     });
 
     it("substract two numbers", () => {
         expect(app.substractTwoNumbers(1, 1)).toBe(0);
         expect(app.substractTwoNumbers(1, 2)).toBe(-1);
+    });
+
+    it("multiply two numbers", () => {
+        expect(app.multiplyTwoNumbers(1, 1)).toBe(0);
     });
 });
 describe("check values", () => {
