@@ -15,7 +15,8 @@ describe("calculator app", () => {
     });
 
     it("multiply two numbers", () => {
-        expect(app.multiplyTwoNumbers(1, 1)).toBe(0);
+        expect(app.multiplyTwoNumbers(1, 1)).toBe(1);
+        expect(app.multiplyTwoNumbers(2, 4)).toBe(8);
     });
 });
 describe("check values", () => {
