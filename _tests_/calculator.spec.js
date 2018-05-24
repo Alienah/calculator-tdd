@@ -20,7 +20,8 @@ describe("calculator app", () => {
     });
 
     it("divides two numbers", () => {
-        expect(app.divideTwoNumbers(2, 1)).toBe(1);
+        expect(app.divideTwoNumbers(0, 0.2)).toBe(0);
+        expect(app.divideTwoNumbers(2, 2)).toBe(1);
     });
 });
 describe("check values", () => {
