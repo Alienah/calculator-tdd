@@ -1,5 +1,8 @@
 export default function calculator () {
+    function sum(num1, num2) {
+       
+    }
     return {
-        calculator
+        sum: sum
     };
 } 

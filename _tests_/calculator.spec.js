@@ -1,7 +1,11 @@
 import calculator from "../src/index";
 
 describe("calculator app", () => {
+    let app;
+    beforeEach(function () {
+        app = calculator();
+    });
     it("sum two numbers", () => {
-        expect(1).toBe(2);
+        expect(app.sum(1,1)).toBe(2);
     });
 });
