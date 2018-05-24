@@ -1,0 +1,40 @@
+{
+  "name": "calculator-tdd",
+  "version": "1.0.0",
+  "description": "calculator made with tdd",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alienah/calculator-tdd.git"
+  },
+  "author": "Aida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alienah/calculator-tdd/issues"
+  },
+  "homepage": "https://github.com/Alienah/calculator-tdd#readme",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "jest": "^22.4.4"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "globals": {
+      "NODE_ENV": "test"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ]
+  }
+}
