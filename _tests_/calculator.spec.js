@@ -6,12 +6,16 @@ beforeEach(function () {
 describe("calculator app", () => {
     
     it("sum two numbers", () => {
-        expect(app.sum(1,1)).toBe(2);
+        expect(app.sumTwoNumbers(1,1)).toBe(2);
         
     });
 });
 describe("check values", () => {
     it("check if the value introduced is type number", () => {
-        expect(app.sum(2 + "2")).toBe(console.log("Debes introducir un número"));
+        expect(app.isANumber()).toBe(false);
+        expect(app.isANumber("-4f")).toBe(false);
+        expect(app.isANumber(2)).toBe(true);
+        
+        //expect(app.sumTwoNumbers(2 + "2")).toBe(console.log("Debes introducir un número"));
     });
 });
