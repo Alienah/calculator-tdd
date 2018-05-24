@@ -11,6 +11,10 @@ export default function calculator () {
         return num1 * num2;
     }
 
+    function divideTwoNumbers(num1, num2) {
+        
+    }
+
     function isANumber(value) {
         if (typeof value === "number") {
             return true;
@@ -23,6 +27,7 @@ export default function calculator () {
         sumTwoNumbers,
         substractTwoNumbers,
         multiplyTwoNumbers,
+        divideTwoNumbers,
         isANumber
     };
 } 

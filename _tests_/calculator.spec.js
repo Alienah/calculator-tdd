@@ -5,18 +5,22 @@ beforeEach(function () {
 });
 describe("calculator app", () => {
     
-    it("sum two numbers", () => {
+    it("adds two numbers", () => {
         expect(app.sumTwoNumbers(1,1)).toBe(2);        
     });
 
-    it("substract two numbers", () => {
+    it("substracts two numbers", () => {
         expect(app.substractTwoNumbers(1, 1)).toBe(0);
         expect(app.substractTwoNumbers(1, 2)).toBe(-1);
     });
 
-    it("multiply two numbers", () => {
+    it("multiplies two numbers", () => {
         expect(app.multiplyTwoNumbers(1, 1)).toBe(1);
         expect(app.multiplyTwoNumbers(2, 4)).toBe(8);
+    });
+
+    it("divides two numbers", () => {
+        expect(app.divideTwoNumbers(2, 1)).toBe(1);
     });
 });
 describe("check values", () => {
