@@ -9,6 +9,10 @@ describe("calculator app", () => {
         expect(app.sumTwoNumbers(1,1)).toBe(2);
         
     });
+
+    it("substract two numbers", () => {
+        expect(app.substractTwoNumbers(1, 1)).toBe(1);
+    });
 });
 describe("check values", () => {
     it("check if the value introduced is type number", () => {

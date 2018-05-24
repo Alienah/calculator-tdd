@@ -12,7 +12,7 @@ export default function calculator () {
         }
     }
     return {
-        sumTwoNumbers: sumTwoNumbers,
+        sumTwoNumbers,
         isANumber
     };
 } 
