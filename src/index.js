@@ -15,6 +15,24 @@ export default function calculator () {
         return num1 / num2;
     }
 
+    function isZero(number) {
+        if (number === 0.000) {
+            return true;
+        }
+    }
+
+    function errorWhenTryingToDivideBetweenZero() {
+        return console.log("No se puede dividir entre 0");
+    }
+
+    function manageDivision(num1, num2) {
+        if (isZero(num2)) {
+            return errorWhenTryingToDivideBetweenZero();
+        } else {
+            return divideTwoNumbers(num1, num2);
+        }
+    }
+
     function isANumber(value) {
         if (typeof value === "number") {
             return true;
@@ -28,6 +46,8 @@ export default function calculator () {
         substractTwoNumbers,
         multiplyTwoNumbers,
         divideTwoNumbers,
+        manageDivision,
+        errorWhenTryingToDivideBetweenZero,
         isANumber
     };
 } 
