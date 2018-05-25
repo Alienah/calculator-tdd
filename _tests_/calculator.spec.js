@@ -32,4 +32,7 @@ describe("check values", () => {
         
         //expect(app.sumTwoNumbers(2 + "2")).toBe(console.log("Debes introducir un número"));
     });
+    it("check if you are dividing between 0", () => {
+        expect(app.manageDivision(2, 0)).toBe(console.log("No se puede dividir entre 0"));
+    });
 });
